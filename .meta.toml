@@ -1,0 +1,26 @@
+# Generated from:
+# https://github.com/plone/meta/tree/main/config/default
+# See the inline comments on how to expand/tweak this configuration file
+[meta]
+template = "default"
+commit-id = "5d669ee9"
+
+[pyproject]
+codespell_skip = "*.min.js"
+codespell_ignores = "vew"
+dependencies_ignores = "['AccessControl', 'OFS','ZODB', 'Zope2','Testing', 'zope.component', 'zope.globalrequest', 'plone.base', 'transaction', 'IPython', 'bpython', 'traitlets', 'prompt-toolkit', 'pytest', 'plone.app.testing', 'pytest-cov', 'pytest-plone', 'relstorage', 'zest.releaser', 'zestreleaser.towncrier']"
+dependencies_mappings = [
+    "typer = ['rich', 'typing_extensions']",
+    "IPython = ['IPython', 'prompt-toolkit']",
+    "Products.CMFPlone = ['plone.api', 'plone.base', 'Products.CMFCore', 'Testing']",
+    ]
+
+[tox]
+use_mxdev = true
+test_runner = "pytest"
+test_path = "/tests"
+
+[gitignore]
+extra_lines = """
+share/
+"""

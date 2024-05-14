@@ -1,0 +1,7 @@
+instance:
+    initial_user_name: 'admin'
+    initial_user_password: 'admin'
+
+    zcml_package_includes: []
+
+    db_storage: direct
